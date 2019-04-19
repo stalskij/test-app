@@ -1,0 +1,113 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{1D5531F5-7990-42F5-A071-5C57E7DD1C4D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{93E01058-EB01-4CED-A51F-B708C5701832}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentations", "Presentations", "{54B551CB-3D08-45F4-9764-1BBD12B8A8BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{762C36A9-AFF5-46DF-A0A8-B977D08A49CF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Transneft.Core", "Libraries\Transneft.Core\Transneft.Core.csproj", "{35F0CE38-F0F6-4923-A6EA-95B31B183B5B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Transneft.Data", "Libraries\Transneft.Data\Transneft.Data.csproj", "{4D65FD72-A315-4BAD-B187-AAAB334AEEEF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Transneft.Web", "Presentations\Transneft.Web\Transneft.Web.csproj", "{5AB3A3EB-10C8-42F2-8E0E-29E642884663}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Transneft.Services", "Libraries\Transneft.Services\Transneft.Services.csproj", "{EC1CC5BF-D2C1-4036-9649-AE4E80A4F237}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{8EC8D857-994D-4C97-B1F0-4BFE603C87E2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Transneft.Api", "Services\Transneft.Api\Transneft.Api.csproj", "{EF52699F-E2B2-486E-8FCC-A72295117F67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{807808B9-7502-4E53-A6D4-20C416E5137D}"
+	ProjectSection(SolutionItems) = preProject
+		readme.txt = readme.txt
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Transneft.Core.Tests", "Tests\Transneft.Core.Tests\Transneft.Core.Tests.csproj", "{C1FCBFED-E1F0-4E88-AAAD-BC528348A497}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Transneft.Services.Tests", "Tests\Transneft.Services.Tests\Transneft.Services.Tests.csproj", "{FEA8ECF9-865F-4E91-9145-3D5018C26635}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Transneft.Web.Tests", "Tests\Transneft.Web.Tests\Transneft.Web.Tests.csproj", "{3F73A995-A67D-4E7C-B410-7BE23489B500}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Transneft.Plugin.Test", "Plugins\Transneft.Plugin.Test\Transneft.Plugin.Test.csproj", "{F7535C32-900A-4B6D-AD08-F9CC07D9A5B8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Transneft.Api.Framework", "Services\Transneft.Api.Framework\Transneft.Api.Framework.csproj", "{2C071D6D-8C27-41FE-A15B-69F257A98F30}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Transneft.Web.Framework", "Presentations\Transneft.Web.Framework\Transneft.Web.Framework.csproj", "{125A143C-0628-4F65-8883-C307AB8F5ACB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35F0CE38-F0F6-4923-A6EA-95B31B183B5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35F0CE38-F0F6-4923-A6EA-95B31B183B5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35F0CE38-F0F6-4923-A6EA-95B31B183B5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35F0CE38-F0F6-4923-A6EA-95B31B183B5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D65FD72-A315-4BAD-B187-AAAB334AEEEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D65FD72-A315-4BAD-B187-AAAB334AEEEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D65FD72-A315-4BAD-B187-AAAB334AEEEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D65FD72-A315-4BAD-B187-AAAB334AEEEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AB3A3EB-10C8-42F2-8E0E-29E642884663}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AB3A3EB-10C8-42F2-8E0E-29E642884663}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AB3A3EB-10C8-42F2-8E0E-29E642884663}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AB3A3EB-10C8-42F2-8E0E-29E642884663}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC1CC5BF-D2C1-4036-9649-AE4E80A4F237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC1CC5BF-D2C1-4036-9649-AE4E80A4F237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC1CC5BF-D2C1-4036-9649-AE4E80A4F237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC1CC5BF-D2C1-4036-9649-AE4E80A4F237}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF52699F-E2B2-486E-8FCC-A72295117F67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF52699F-E2B2-486E-8FCC-A72295117F67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF52699F-E2B2-486E-8FCC-A72295117F67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF52699F-E2B2-486E-8FCC-A72295117F67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1FCBFED-E1F0-4E88-AAAD-BC528348A497}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1FCBFED-E1F0-4E88-AAAD-BC528348A497}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1FCBFED-E1F0-4E88-AAAD-BC528348A497}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1FCBFED-E1F0-4E88-AAAD-BC528348A497}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEA8ECF9-865F-4E91-9145-3D5018C26635}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEA8ECF9-865F-4E91-9145-3D5018C26635}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEA8ECF9-865F-4E91-9145-3D5018C26635}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEA8ECF9-865F-4E91-9145-3D5018C26635}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F73A995-A67D-4E7C-B410-7BE23489B500}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F73A995-A67D-4E7C-B410-7BE23489B500}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F73A995-A67D-4E7C-B410-7BE23489B500}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F73A995-A67D-4E7C-B410-7BE23489B500}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7535C32-900A-4B6D-AD08-F9CC07D9A5B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7535C32-900A-4B6D-AD08-F9CC07D9A5B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7535C32-900A-4B6D-AD08-F9CC07D9A5B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7535C32-900A-4B6D-AD08-F9CC07D9A5B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C071D6D-8C27-41FE-A15B-69F257A98F30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C071D6D-8C27-41FE-A15B-69F257A98F30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C071D6D-8C27-41FE-A15B-69F257A98F30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C071D6D-8C27-41FE-A15B-69F257A98F30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{125A143C-0628-4F65-8883-C307AB8F5ACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{125A143C-0628-4F65-8883-C307AB8F5ACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{125A143C-0628-4F65-8883-C307AB8F5ACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{125A143C-0628-4F65-8883-C307AB8F5ACB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{35F0CE38-F0F6-4923-A6EA-95B31B183B5B} = {1D5531F5-7990-42F5-A071-5C57E7DD1C4D}
+		{4D65FD72-A315-4BAD-B187-AAAB334AEEEF} = {1D5531F5-7990-42F5-A071-5C57E7DD1C4D}
+		{5AB3A3EB-10C8-42F2-8E0E-29E642884663} = {54B551CB-3D08-45F4-9764-1BBD12B8A8BD}
+		{EC1CC5BF-D2C1-4036-9649-AE4E80A4F237} = {1D5531F5-7990-42F5-A071-5C57E7DD1C4D}
+		{EF52699F-E2B2-486E-8FCC-A72295117F67} = {8EC8D857-994D-4C97-B1F0-4BFE603C87E2}
+		{C1FCBFED-E1F0-4E88-AAAD-BC528348A497} = {762C36A9-AFF5-46DF-A0A8-B977D08A49CF}
+		{FEA8ECF9-865F-4E91-9145-3D5018C26635} = {762C36A9-AFF5-46DF-A0A8-B977D08A49CF}
+		{3F73A995-A67D-4E7C-B410-7BE23489B500} = {762C36A9-AFF5-46DF-A0A8-B977D08A49CF}
+		{F7535C32-900A-4B6D-AD08-F9CC07D9A5B8} = {93E01058-EB01-4CED-A51F-B708C5701832}
+		{2C071D6D-8C27-41FE-A15B-69F257A98F30} = {8EC8D857-994D-4C97-B1F0-4BFE603C87E2}
+		{125A143C-0628-4F65-8883-C307AB8F5ACB} = {54B551CB-3D08-45F4-9764-1BBD12B8A8BD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8CD78B80-D84E-454C-93DA-EF67803D944B}
+	EndGlobalSection
+EndGlobal

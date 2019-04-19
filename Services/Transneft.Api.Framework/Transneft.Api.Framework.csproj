@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\Transneft.Core\Transneft.Core.csproj" />
+    <ProjectReference Include="..\..\Libraries\Transneft.Data\Transneft.Data.csproj" />
+    <ProjectReference Include="..\..\Libraries\Transneft.Services\Transneft.Services.csproj" />
+  </ItemGroup>
+
+</Project>
