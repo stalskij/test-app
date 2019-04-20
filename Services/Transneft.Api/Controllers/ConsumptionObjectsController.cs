@@ -26,12 +26,22 @@ namespace Transneft.Api.Controllers
         }
 
         #endregion
-        
+
+        /// <summary>
+        /// Возвращает список объектов потребления дочерней организации
+        /// </summary>
+        /// <returns>Список объектов потребления</returns>
+        [HttpGet]
+        public IEnumerable<ConsumptionObject> Get()
+        {
+            return _objectService.GetConsumptionObjectsAll();
+        }
+
         /// <summary>
         /// Возвращает список объектов потребления дочерней организации
         /// </summary>
         /// <param name="affiliatedCompanyId">ИД дочерней организации</param>
-        /// <returns>Организация</returns>
+        /// <returns>Список объектов потребления</returns>
         [HttpGet("{affiliatedCompanyId}")]
         public IEnumerable<ConsumptionObject> Get(int affiliatedCompanyId)
         {

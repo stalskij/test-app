@@ -19,7 +19,11 @@ namespace Transneft.Data.Mapping.Companies
         {
             builder.ToTable(nameof(Company));
             builder.HasKey(company => company.Id);
-            
+
+            builder.Property(c => c.Name).HasMaxLength(400);
+            builder.Property(c => c.Address).HasMaxLength(1000);
+            builder.Property(c => c.Name).IsRequired();
+
             base.Configure(builder);
         }
 

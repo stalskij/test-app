@@ -60,6 +60,15 @@ namespace Transneft.Services.ConsumptionObjects
                 .ToList();
         }
 
+        /// <summary>
+        /// Возвращает список объектов потребления
+        /// </summary>
+        /// <returns>Список объектов потребления</returns>
+        public IList<ConsumptionObject> GetConsumptionObjectsAll()
+        {
+            return _consumptionRepository.Table.ToList(); ////TODO: Так делать нельзя. Только для теста:)
+        }
+
         #endregion 
 
         #endregion

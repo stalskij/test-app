@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Transneft.Web.Managers;
 
 namespace Transneft.Web
 {
@@ -14,6 +15,9 @@ namespace Transneft.Web
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+
+            var api = Configuration["Api"].ToString();
+            ApiManager.Create(api);
         }
 
         public IConfiguration Configuration { get; }

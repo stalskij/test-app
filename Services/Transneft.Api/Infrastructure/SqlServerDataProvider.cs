@@ -24,21 +24,12 @@ namespace Transneft.Api.Infrastructure
         {
             var context = EngineContext.Current.Resolve<IDbContext>();
 
-            (context as DbContext).Database.EnsureCreated();
-
-            //проверьте некоторые имена таблиц, чтобы убедиться, что у нас установлена система 
-            var tableNamesToValidate = new List<string> { "Company", "AffiliatedCompany" };
-            var existingTableNames = context
-                .QueryFromSql<StringQueryType>("SELECT table_name AS Value FROM INFORMATION_SCHEMA.TABLES WHERE table_type = 'BASE TABLE'")
-                .Select(stringValue => stringValue.Value).ToList();
-            var createTables = tableNamesToValidate.All(t => existingTableNames.Contains(t));// !existingTableNames.Intersect(tableNamesToValidate, StringComparer.InvariantCultureIgnoreCase).Any();
-            if (createTables)
+            //создание БД
+            var createDb = (context as DbContext).Database.EnsureCreated();
+             if (!createDb)
                 return;
 
             var fileProvider = EngineContext.Current.Resolve<IEngineFileProvider>();
-
-            //создание таблиц
-            //context.ExecuteSqlScript(context.GenerateCreateScript());
 
             //наполнение данными по умолчанию
             context.ExecuteSqlScriptFromFile(fileProvider.MapPath(ApplicationDataDefaults.SqlServerDataSampleFilePath));

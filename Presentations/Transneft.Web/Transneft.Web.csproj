@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.9" />
+    <PackageReference Include="RestSharp" Version="106.6.9" />
   </ItemGroup>
 
   <ItemGroup>
@@ -14,11 +15,23 @@
 
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Validators\Companies\" />
+    <Folder Include="Validators\PowerMeasurementPoints\" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Transneft.Web.Framework\Transneft.Web.Framework.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\PowerPoint\Overdue.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Shared\_Footer.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Shared\_Header.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
   </ItemGroup>
 
 </Project>

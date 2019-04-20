@@ -20,9 +20,14 @@ namespace Transneft.Data.Mapping.Companies
             builder.ToTable(nameof(AffiliatedCompany));
             builder.HasKey(p => p.Id);
 
+            builder.Property(c => c.Name).HasMaxLength(400);
+            builder.Property(c => c.Address).HasMaxLength(1000);
+            builder.Property(c => c.Name).IsRequired();
+
             builder.HasOne(p => p.Company)
                 .WithMany(c => c.AffiliatedCompanies)
-                .HasForeignKey(company => company.CompanyId);
+                .HasForeignKey(company => company.CompanyId)
+                .IsRequired();
 
             base.Configure(builder);
         }

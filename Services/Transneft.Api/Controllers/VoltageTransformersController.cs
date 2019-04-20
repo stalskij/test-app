@@ -9,7 +9,7 @@ namespace Transneft.Api.Controllers
     /// Контроллер точки измерения
     /// </summary>
     [Route("api/[controller]")]
-    public class VoltageTransformerController : BaseController
+    public class VoltageTransformersController : BaseController
     {
         #region Fields
 
@@ -19,7 +19,7 @@ namespace Transneft.Api.Controllers
 
         #region Ctor
 
-        public VoltageTransformerController(IPowerPointsService pointService)
+        public VoltageTransformersController(IPowerPointsService pointService)
         {
             _pointService = pointService;
         }

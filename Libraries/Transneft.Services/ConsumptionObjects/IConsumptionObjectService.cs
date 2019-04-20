@@ -13,6 +13,12 @@ namespace Transneft.Services.ConsumptionObjects
         #region ConsumptionObjects
 
         /// <summary>
+        /// Возвращает список объектов потребления
+        /// </summary>
+        /// <returns>Список объектов потребления</returns>
+        IList<ConsumptionObject> GetConsumptionObjectsAll();
+
+        /// <summary>
         /// Получить объект потребления по идентификатору
         /// </summary>
         /// <param name="сonsumptionObjectId">Идентификатор объекта потребления</param>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using Transneft.Api.Framework.Controllers;
 using Transneft.Core.Domain.PowerMeasurementPoints;
 using Transneft.Services.Companies;
@@ -46,11 +47,12 @@ namespace Transneft.Api.Controllers
         /// <summary>
         /// Сохраняет точку измерения
         /// </summary>
-        /// <param name="point">Точка измерения</param>
+        /// <param name="value">Точка измерения</param>
         [HttpPost]
-        public void Post([FromBody]PowerMeasurementPoint point)
+        public void Post(string value)
         {
-            _powerPointsService.InsertPoint(point);
+            var data = JsonConvert.DeserializeObject<PowerMeasurementPoint>(value);
+            _powerPointsService.InsertPoint(data);
         }
     }
 }

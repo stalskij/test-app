@@ -16,7 +16,7 @@ namespace Transneft.Core.Domain.PowerMeasurementPoints
         /// <summary>
         /// Возвращает или задает тип
         /// </summary>
-        public string Type { get; set; }
+        public int Type { get; set; }
 
         /// <summary>
         /// Возвращает или задает дату проверки

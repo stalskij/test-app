@@ -9,6 +9,13 @@ namespace Transneft.Core.Domain.PowerMeasurementPoints
     /// </summary>
     public class PowerMeasurementPointModel: ModelBase
     {
+        public PowerMeasurementPointModel()
+        {
+            VoltageTransformer = new VoltageTransformerModel();
+            CurrentTransformer = new CurrentTransformerModel();
+            ElectricityMeter = new ElectricityMeterModel();
+        }
+
         /// <summary>
         /// Возвращает или задает наименование объекта
         /// </summary>
